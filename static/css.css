@@ -17,7 +17,6 @@ body {
   font-family: 'Covered By Your Grace', cursive;
 }
 a {
-  text-decoration: none;
   color: #666;
   position: relative;
   display: inline-block;
@@ -36,6 +35,7 @@ main {
 }
 .title a {
   color: #cf5659;
+  text-decoration: none;
 }
 blockquote {
   margin-top: 0.5em;
