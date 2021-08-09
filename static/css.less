@@ -23,6 +23,7 @@ a {
   position: relative;
   display: inline-block;
   transition: color 0.1s ease-in-out;
+  text-decoration: none;
 }
 ::selection {
   color: inherit;
@@ -55,6 +56,10 @@ blockquote {
   li {
     padding-right: 0.8em;
     display: inline;
+    a {
+      padding-bottom: .25em;
+      border-bottom:#666 solid 2px;
+    }
     a:hover {
       color: black;
     }
