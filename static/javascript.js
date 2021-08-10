@@ -20,10 +20,10 @@ let domBtn = document.querySelector('li.btn[language]');
 
 function languageSwitch() {
   let currentLanguage = languageSwitchBtn.attributes.language.value;
-  console.log('switch',currentLanguage);
+  console.log('switch', currentLanguage);
   if (currentLanguage === 'en') {
     languageSwitchBtn.attributes.language.value = 'zh';
-    document.body.style.fontFamily = 'pingfang-sc，micsoft-yahei';
+    document.body.style.fontFamily = 'system-ui';
     domTitle.innerHTML = '什么毛病';
     domBlockquote.innerHTML = languageList.zh.blockquote;
     domBtn.innerHTML = languageList.zh.btn;
