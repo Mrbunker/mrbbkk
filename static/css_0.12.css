@@ -6,12 +6,10 @@
   outline: 0;
   box-sizing: border-box;
 }
-
 @font-face {
   font-family: Covered;
-  src: url(./font.woff);
+  src: url(font.woff);
 }
-
 .icon {
   width: 1em;
   height: 1em;
@@ -22,7 +20,6 @@
   padding-right: 0.3em;
   box-sizing: content-box;
 }
-
 a {
   color: #666;
   position: relative;
@@ -30,15 +27,14 @@ a {
   transition: color 0.1s ease-in-out;
   text-decoration: none;
 }
-a:hover ,.btn:hover{
-  color:black;
+a:hover,
+.btn:hover {
+  color: black;
 }
-
 ::selection {
   color: inherit;
   background: rgba(255, 71, 71, 0.3);
 }
-
 @keyframes right-in {
   0% {
     opacity: 0;
@@ -55,84 +51,70 @@ a:hover ,.btn:hover{
     transform: translateX(0);
   }
 }
-
 body {
   width: 100%;
-  // height: 100vh;
   height: 500px;
   margin: auto;
   background: #fff;
   color: #666;
   overflow: hidden;
-  // font-family: -apple-system, 'pingfang sc',system-ui, 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
   font-family: Covered;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-
 main {
   width: 70%;
-
 }
-
 .title {
-  a {
-    color: #cf5659;
-    text-decoration: none;
-  }
-  animation: right-in .5s  ease-out 1;
+  animation: right-in 0.5s ease-out 1;
 }
-
+.title a {
+  color: #cf5659;
+  text-decoration: none;
+}
 blockquote {
   margin-top: 2.5em;
-  animation: right-in 1s  ease-out 1;
+  animation: right-in 1s ease-out 1;
 }
-
 .web-list {
   margin-top: 1em;
-  animation: right-in .5s ease-out 1;
-  li {
-    padding-right: 0.8em;
-    display: inline;
-
-    a {
-      font-size: inherit;
-
-    }
-  }
+  animation: right-in 0.5s ease-out 1;
 }
-
+.web-list li {
+  padding-right: 0.8em;
+  display: inline;
+}
+.web-list li a {
+  font-size: inherit;
+}
 footer {
   width: 100%;
   position: absolute;
   bottom: 0;
-  padding: .5rem 0;
+  padding: 0.5rem 0;
   background-color: #666;
   color: white;
   display: flex;
   justify-content: center;
-  a{
-    color:white;
-  }
-  a:hover,.btn:hover{
-    color:white;
-  }
-  font-size: .85em;
+  font-size: 0.85em;
 }
-
+footer a {
+  color: white;
+}
+footer a:hover,
+footer .btn:hover {
+  color: white;
+}
 .btn-list {
   width: 70%;
-  li {
-    display: inline;
-    cursor: pointer;
-    padding-right:1em;
-  }
 }
-
-// 响应式
+.btn-list li {
+  display: inline;
+  cursor: pointer;
+  padding-right: 1em;
+}
 body {
   font-size: 24px;
 }
@@ -145,18 +127,25 @@ blockquote {
 .web-list {
   font-size: 1.2em;
 }
-
 @media screen and (max-width: 600px) {
   body {
     font-size: 16px;
   }
-  .btn-list,main {
+  .title {
+    font-size: 2.75em;
+  }
+  .btn-list,
+  main {
     width: 80%;
   }
   .web-list {
-    margin-top: 0.5em;
-    li {
-      padding-right: 0.1em;
-    }
+    margin-top: 1.75em;
+  }
+  .web-list li {
+    padding-right: 1em;
+    line-height: 1.75em;
+  }
+  footer {
+    font-size: 1.1em;
   }
 }
