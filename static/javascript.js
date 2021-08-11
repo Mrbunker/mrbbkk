@@ -42,7 +42,6 @@ function audioEvent() {
   let audio = document.querySelector('audio');
   audio.play();
   audio.volume = 0.015;
-  console.log(audio.volume);
 
   mrbbkk.addEventListener('click', () => {
     audio.volume = 0.1;
@@ -51,13 +50,13 @@ function audioEvent() {
 
   audio.addEventListener('timeupdate', function firstPause() {
     if (audio.currentTime >= 1) {
-      audio.volume = 0.2;
       audio.pause();
       audio.removeEventListener('timeupdate', firstPause);
     }
   });
   audio.addEventListener('timeupdate', function firstPause() {
-    if (audio.currentTime >= 4) {
+    console.log(audio.currentTime);
+    if (audio.currentTime >= 2.3) {
       audio.pause();
       audio.removeEventListener('timeupdate', firstPause);
     }
