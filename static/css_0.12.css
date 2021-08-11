@@ -68,11 +68,13 @@ main {
   width: 70%;
 }
 .title {
+  font-weight: bolder;
   animation: right-in 0.5s ease-out 1;
 }
-.title a {
+.title span {
   color: #cf5659;
   text-decoration: none;
+  cursor: pointer;
 }
 blockquote {
   margin-top: 2.5em;
