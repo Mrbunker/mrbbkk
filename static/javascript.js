@@ -41,10 +41,9 @@ function languageEvent() {
 function audioEvent() {
   let audio = document.querySelector('audio');
   audio.play();
-  audio.volume = 0.1;
-
+  audio.volume = 0.07;
   mrbbkk.addEventListener('click', () => {
-    audio.volume = 0.3;
+    audio.volume = 0.2;
     audio.play();
   });
 
