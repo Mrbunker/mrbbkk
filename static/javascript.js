@@ -3,7 +3,6 @@ function languageEvent() {
   let domBlockquote = document.querySelector('blockquote[language]');
   let domBtn = document.querySelector('li.btn[language]');
   // let domMain = document.querySelector('main');
-
   function languageSwitch() {
     let languageList = {
       en: {
