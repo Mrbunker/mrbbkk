@@ -61,5 +61,5 @@ function audioEvent() {
   });
 }
 
-languageEvent();
+// languageEvent();
 audioEvent();
