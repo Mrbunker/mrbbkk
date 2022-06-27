@@ -1,6 +1,5 @@
-import styled from "styled-components";
-import { useRef, useState } from "preact/hooks";
-import { Wrapper, TextItem, Link } from "./testStyle";
+import { useRef } from "preact/hooks";
+import { Wrapper, TextContainer, SiteListContainer,Link } from "./TextStyle";
 interface site {
   name: string;
   url: string;
@@ -61,8 +60,7 @@ export const Text = () => {
   return (
     <Wrapper>
       <div style={{ width: "70%" }}>
-        <TextItem
-          className="title"
+        <TextContainer
           fs={4}
           fw={true}
         >
@@ -73,8 +71,8 @@ export const Text = () => {
           >
             {"mrbbkk"}
           </span>
-        </TextItem>
-        <TextItem mt={2}>
+        </TextContainer>
+        <SiteListContainer mt={2} className="siteList">
           {siteList.map((item) => {
             return (
               <SiteItem
@@ -84,8 +82,8 @@ export const Text = () => {
               />
             );
           })}
-        </TextItem>
-        <TextItem mt={4}>"Be curious, not judgmental."</TextItem>
+        </SiteListContainer>
+        <TextContainer mt={4}>"Be curious, not judgmental."</TextContainer>
       </div>
       <audio
         ref={audioRef}

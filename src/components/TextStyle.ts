@@ -5,7 +5,7 @@ export const Wrapper = styled.div`
   width: 100%;
   font-family: Covered;
   color: #777777;
-  height: 36rem;
+  height: 75vh;
   justify-content: center;
   align-items: center;
 
@@ -50,10 +50,18 @@ export const Wrapper = styled.div`
   }
 `;
 
-export const TextItem = styled.div<{ mt?: number; fs?: number; fw?: boolean }>`
+export const TextContainer = styled.div<{ mt?: number; fs?: number; fw?: boolean }>`
   margin-top: ${(props) => props.mt || 1}rem;
   font-size: ${(props) => props.fs || 2}rem;
   font-weight: ${(props) => (props.fw ? "bold" : "normal")};
+`;
+
+export const SiteListContainer = styled(TextContainer)`
+  display: flex;
+  flex-wrap: wrap;
+  width: 75%;
+  gap: 1.5rem;
+  align-items: center;
 `;
 
 export const Link = styled.a`
@@ -61,7 +69,6 @@ export const Link = styled.a`
   &:hover {
     color: black;
   }
-  padding-right: 2rem;
   text-decoration: none;
   transition: color 0.3s ease-in-out;
   svg {
