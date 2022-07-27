@@ -3,7 +3,8 @@ import preact from "@preact/preset-vite";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "/",
+  // 没有域名了，base 填到 xiaban 路径
+  base: "/xaiban/",
   plugins: [preact()],
   esbuild: {
     logOverride: { "this-is-undefined-in-esm": "silent" },
