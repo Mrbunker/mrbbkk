@@ -1,3 +1,3 @@
 > it's mrbbkk
 
-[mrbbkk](https://mrbbkk.ml)
+[mrbbkk](https://mrbunker.github.io/mrbbkk/)
