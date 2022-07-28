@@ -87,7 +87,7 @@ export const Text = () => {
       </div>
       <audio
         ref={audioRef}
-        src="/hei.aac"
+        src="hei.aac"
       ></audio>
     </Wrapper>
   );
